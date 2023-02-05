@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using REST_EF_demo.Data;
 using REST_EF_demo.Models;
+using System.Linq;
 
 namespace REST_EF_demo.Services
 {
@@ -52,11 +53,11 @@ namespace REST_EF_demo.Services
                 if (includeBooks) // books should be included
                 {
                     return await _db.Authors.Include(b => b.Books)
-                        .FirstOrDefaultAsync(i => i.Name == name);
+                        .Where(i => i.Name == name).FirstOrDefaultAsync();
                 }
 
                 // Books should be excluded
-                return await _db.Authors.FindAsync(name);
+                return await _db.Authors.Where(i => i.Name == name).FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
