@@ -45,6 +45,24 @@ namespace REST_EF_demo.Services
                 return null;
             }
         }
+        public async Task<Author> GetAuthorAsync(string name , bool includeBooks)
+        {
+            try
+            {
+                if (includeBooks) // books should be included
+                {
+                    return await _db.Authors.Include(b => b.Books)
+                        .FirstOrDefaultAsync(i => i.Name == name);
+                }
+
+                // Books should be excluded
+                return await _db.Authors.FindAsync(name);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
 
         public async Task<Author> AddAuthorAsync(Author author)
         {

@@ -6,7 +6,9 @@ namespace REST_EF_demo.Models
     {
         [Key]
         public Guid Id { get; set; }
+        [Required]
         public string? Name { get; set; }
+        [Required]
         public DateTime? DateOfBirth { get; set; }
 
         // One-to-many relationship with books

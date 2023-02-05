@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_EF_demo", "REST_EF_demo\REST_EF_demo.csproj", "{FF176F40-74D9-458F-B9F4-63FEA81A8AE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REST_EF_demo", "REST_EF_demo\REST_EF_demo.csproj", "{FF176F40-74D9-458F-B9F4-63FEA81A8AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "REST_EF_demo_test", "REST_EF_demo_test\REST_EF_demo_test.csproj", "{D61C58E3-0580-43E0-84CF-F8F674D2F849}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FF176F40-74D9-458F-B9F4-63FEA81A8AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF176F40-74D9-458F-B9F4-63FEA81A8AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF176F40-74D9-458F-B9F4-63FEA81A8AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61C58E3-0580-43E0-84CF-F8F674D2F849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61C58E3-0580-43E0-84CF-F8F674D2F849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61C58E3-0580-43E0-84CF-F8F674D2F849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61C58E3-0580-43E0-84CF-F8F674D2F849}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
